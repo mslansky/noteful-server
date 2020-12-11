@@ -1,13 +1,13 @@
 'use strict';
 const app = require('./app');
-const { PORT } = require('./config');
+const { PORT, DATABASE_URL } = require('./config');
 const knex = require('knex');
 
 
 
 const knexInstance = knex({
   client: 'pg',
-  connection: 'postgresql://localhost/noteful',
+  connection: DATABASE_URL,
 });
 
 app.set('db', knexInstance);
