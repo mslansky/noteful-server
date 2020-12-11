@@ -1,5 +1,7 @@
 'use strict';
 module.exports = {
+  'migrationDirectory': 'migrations',
+  'driver': 'pg',
   PORT: process.env.PORT || 8000,
   NODE_ENV: process.env.NODE_ENV || 'development',
   API_TOKEN: process.env.API_TOKEN || 'dummy-api-token',
