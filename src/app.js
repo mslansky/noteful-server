@@ -13,7 +13,7 @@ const bodyParser = express.json();
 
 const app = express();
 
-app.use(cors({origin: /vercel.app/}));
+app.use(cors({origin: /vercel\.app/}));
 
 app.use(morgan((NODE_ENV === 'production') ? 'tiny' : 'common', {
   skip: () => NODE_ENV === 'test'
