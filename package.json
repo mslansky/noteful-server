@@ -10,7 +10,7 @@
     "predeploy": "npm audit",
     "deploy": "git push heroku master",
     "migrate:production": "heroku run npm run migrate",
-    "migrate": "postgrator --config config.js",
+    "migrate": "postgrator --config src/config.js",
     "postdeploy": "npm run migrate:production"
   },
   "keywords": [],
@@ -21,6 +21,7 @@
     "helmet": "^4.2.0",
     "knex": "^0.21.12",
     "morgan": "^1.10.0",
+    "package.json": "^2.0.1",
     "pg": "^8.5.1",
     "postgrator-cli": "^3.2.0",
     "uuid": "^3.4.0",
